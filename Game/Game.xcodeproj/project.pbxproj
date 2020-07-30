@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96A0226C24D2ECB4008F7256 /* WishMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A0226B24D2ECB4008F7256 /* WishMaker.swift */; };
 		96E6573A24CF13FC002D2887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E6573924CF13FC002D2887 /* AppDelegate.swift */; };
 		96E6573C24CF13FC002D2887 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E6573B24CF13FC002D2887 /* SceneDelegate.swift */; };
 		96E6573E24CF13FC002D2887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E6573D24CF13FC002D2887 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96A0226B24D2ECB4008F7256 /* WishMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMaker.swift; sourceTree = "<group>"; };
 		96E6573624CF13FC002D2887 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E6573924CF13FC002D2887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E6573B24CF13FC002D2887 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				96E6573924CF13FC002D2887 /* AppDelegate.swift */,
 				96E6573B24CF13FC002D2887 /* SceneDelegate.swift */,
 				96E6573D24CF13FC002D2887 /* ViewController.swift */,
+				96A0226B24D2ECB4008F7256 /* WishMaker.swift */,
 				96E6573F24CF13FC002D2887 /* Main.storyboard */,
 				96E6574224CF13FC002D2887 /* Assets.xcassets */,
 				96E6574424CF13FC002D2887 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E6573E24CF13FC002D2887 /* ViewController.swift in Sources */,
+				96A0226C24D2ECB4008F7256 /* WishMaker.swift in Sources */,
 				96E6573A24CF13FC002D2887 /* AppDelegate.swift in Sources */,
 				96E6573C24CF13FC002D2887 /* SceneDelegate.swift in Sources */,
 			);
