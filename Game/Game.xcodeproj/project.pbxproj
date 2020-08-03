@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9620088424D871E600500E78 /* cry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9620088324D86FD600500E78 /* cry.wav */; };
+		9620088624D8743900500E78 /* buttonSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9620088524D8743900500E78 /* buttonSound.wav */; };
 		96E6573A24CF13FC002D2887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E6573924CF13FC002D2887 /* AppDelegate.swift */; };
 		96E6573C24CF13FC002D2887 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E6573B24CF13FC002D2887 /* SceneDelegate.swift */; };
 		96E6573E24CF13FC002D2887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E6573D24CF13FC002D2887 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9620088324D86FD600500E78 /* cry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cry.wav; sourceTree = "<group>"; };
+		9620088524D8743900500E78 /* buttonSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = buttonSound.wav; path = ../../../../Downloads/buttonSound.wav; sourceTree = "<group>"; };
 		96E6573624CF13FC002D2887 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E6573924CF13FC002D2887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E6573B24CF13FC002D2887 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		96E6573824CF13FC002D2887 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				9620088524D8743900500E78 /* buttonSound.wav */,
+				9620088324D86FD600500E78 /* cry.wav */,
 				96E6573924CF13FC002D2887 /* AppDelegate.swift */,
 				96E6573B24CF13FC002D2887 /* SceneDelegate.swift */,
 				96E6573D24CF13FC002D2887 /* ViewController.swift */,
@@ -126,8 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E6574624CF13FC002D2887 /* LaunchScreen.storyboard in Resources */,
+				9620088424D871E600500E78 /* cry.wav in Resources */,
 				96E6574324CF13FC002D2887 /* Assets.xcassets in Resources */,
 				96E6574124CF13FC002D2887 /* Main.storyboard in Resources */,
+				9620088624D8743900500E78 /* buttonSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W429RYM845;
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W429RYM845;
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
