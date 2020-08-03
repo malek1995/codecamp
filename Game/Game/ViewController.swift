@@ -103,28 +103,8 @@ class ViewController: UIViewController {
             {
                 healthTimer.invalidate()
                 healthTimer = nil
-                createAlert(title: "warning", message:"i´m sick Dad :(")
-               
-                let center = UNUserNotificationCenter.current()
-                center.requestAuthorization(options: [.alert, .sound]){
-                (granted, error) in
-                }
-                let content = UNMutableNotificationContent()
-                    content.title = "reminder"
-                    content.body = "i´m sick Dad :("
-                        
-                let date = Date().addingTimeInterval(1)
-                        
-                let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-                        
-                let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-
-                let uuidString = UUID().uuidString
-
-                let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-                    center.add(request) { (error) in
-                            // check sone error
-                    }
+                createAlert(title: "warning", message: "i´m sick Dad")
+                createNotification(title: "warning", message: "i´m sick")
             }
     }
     
@@ -136,31 +116,8 @@ class ViewController: UIViewController {
         {
             drinkTimer.invalidate()
             drinkTimer = nil
-            createAlert(title: "warning", message:"I'm thirsty Dad :(")
-            let center = UNUserNotificationCenter.current()
-            
-            center.requestAuthorization(options: [.alert, .sound]){
-                (granted, error) in
-            }
-            
-            let content = UNMutableNotificationContent()
-                       content.title = "reminder"
-                       content.body = "I'm thirsty Dad :("
-            
-            let date = Date().addingTimeInterval(1)
-            
-            let dateComponents =
-                Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-            
-            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-
-            let uuidString = UUID().uuidString
-
-            let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-            center.add(request) { (error) in
-                // check sone error
-            }
-            
+            createAlert(title: "warning", message:"I'm thirsty")
+            createNotification(title: "warning", message: "i´m thirsty")
         }
         
     }
@@ -173,30 +130,8 @@ class ViewController: UIViewController {
          {
             foodTimer.invalidate()
             foodTimer = nil
-            createAlert(title: "warning", message:"I'm hungry Dad :(")
-            let center = UNUserNotificationCenter.current()
-            
-            center.requestAuthorization(options: [.alert, .sound]){
-                (granted, error) in
-            }
-            
-            let content = UNMutableNotificationContent()
-                       content.title = "reminder"
-                       content.body = "I'm hungry Dad :("
-            
-            let date = Date().addingTimeInterval(1)
-            
-            let dateComponents =
-                Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-            
-            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-
-            let uuidString = UUID().uuidString
-
-            let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-            center.add(request) { (error) in
-                // check sone error
-            }
+            createAlert(title: "warning", message:"I'm hungry")
+            createNotification(title: "warning", message: "i´m hungry")
         }
     }
     
@@ -208,30 +143,8 @@ class ViewController: UIViewController {
         {
             careTimer.invalidate()
             careTimer = nil
-            createAlert(title: "warning", message:"i need care Dad :(")
-            let center = UNUserNotificationCenter.current()
-            
-            center.requestAuthorization(options: [.alert, .sound]){
-                (granted, error) in
-            }
-            
-            let content = UNMutableNotificationContent()
-                       content.title = "reminder"
-                       content.body = "i need care Dad :("
-            
-            let date = Date().addingTimeInterval(1)
-            
-            let dateComponents =
-                Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-            
-            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-
-            let uuidString = UUID().uuidString
-
-            let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-            center.add(request) { (error) in
-                // check sone error
-            }
+            createAlert(title: "warning", message:"i need care")
+            createNotification(title: "warning", message: "i need care")
         }
     }
 
@@ -251,6 +164,27 @@ class ViewController: UIViewController {
         alert.dismiss(animated: true, completion: nil)
             
         }
+    }
+    
+    func createNotification(title: String, message: String){
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]){
+        (granted, error) in
+        }
+        let content = UNMutableNotificationContent()
+            content.title = title
+            content.body = message
+        let date = Date().addingTimeInterval(1)
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+                
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+
+        let uuidString = UUID().uuidString
+
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+            center.add(request) { (error) in
+                    // check sone error
+            }
     }
     
      func playSound(withName name : String) {
