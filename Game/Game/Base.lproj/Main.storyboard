@@ -167,6 +167,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="careBar" destination="V7Y-SZ-2ck" id="nxl-68-Gmh"/>
+                        <outlet property="drinkBar" destination="zVe-n5-QoP" id="3wf-6F-eRC"/>
+                        <outlet property="foodBar" destination="Pdp-JM-dsX" id="7GF-tf-c2K"/>
+                        <outlet property="healthBar" destination="DUv-2d-gkv" id="XPL-fV-m12"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,13 +13,13 @@ class WishMaker{
     
     var price:Int? = nil
     var name:String? = nil
-    var addToHealth:Int? = nil
-    var addToFood:Int? = nil
+    var addToHealth:Float? = nil
+    var addToFood:Float? = nil
     var type:String? = nil
-    var addToDrink:Int? = nil
-    var addToCare:Int? = nil
+    var addToDrink:Float? = nil
+    var addToCare:Float? = nil
   
-    func makeDrink(price:Int, name:String, addToHealth:Int, addToDrink:Int){
+    func makeDrink(price:Int, name:String, addToHealth:Float, addToDrink:Float){
         self.price = price
         self.name = name
         self.addToDrink = addToDrink
@@ -29,7 +29,7 @@ class WishMaker{
         self.type = "Drink"
     }
     
-    func makeFood(price:Int, name:String, addToHealth:Int, addToFood:Int){
+    func makeFood(price:Int, name:String, addToHealth:Float, addToFood:Float){
         self.price = price
         self.name = name
         self.addToDrink = 0
@@ -39,7 +39,7 @@ class WishMaker{
         self.type = "Food"
     }
     
-    func makeCare(price:Int, name:String, addToHealth:Int, addToCare:Int){
+    func makeCare(price:Int, name:String, addToHealth:Float, addToCare:Float){
         self.price = price
         self.name = name
         self.addToDrink = 0
@@ -65,19 +65,19 @@ class WishMaker{
         return self.name!
     }
     
-    func setAddToHealth(addToHealth: Int){
+    func setAddToHealth(addToHealth: Float){
         self.addToHealth = addToHealth
     }
     
-    func getAddToHealth() -> Int{
+    func getAddToHealth() -> Float{
         return self.addToHealth!
     }
     
-    func setAddtoFood(addToFood: Int){
+    func setAddtoFood(addToFood: Float){
         self.addToFood = addToFood
     }
     
-    func getAddToFood() -> Int {
+    func getAddToFood() -> Float {
         return self.addToFood!
     }
     
@@ -89,19 +89,19 @@ class WishMaker{
         return self.type!
     }
     
-    func setAddToDrink(addToDrink: Int){
+    func setAddToDrink(addToDrink: Float){
         self.addToDrink = addToDrink
     }
     
-    func getAddToDrink() -> Int {
+    func getAddToDrink() -> Float {
         return self.addToDrink!
     }
     
-    func setAddToCare(addToCare:Int)  {
+    func setAddToCare(addToCare:Float)  {
         self.addToCare = addToCare
     }
     
-    func getAddToCare() -> Int {
+    func getAddToCare() -> Float {
         return self.addToCare!
     }
     
