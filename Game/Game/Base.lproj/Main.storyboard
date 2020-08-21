@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="file2" translatesAutoresizingMaskIntoConstraints="NO" id="4id-j2-g7U">
-                                <rect key="frame" x="0.0" y="139" width="414" height="403.00000000000023"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="454"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -104,58 +104,53 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-angry-birds-northern-cardinal-clip-art-angry-birds-5ab7fb36b6c1c0-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="HRK-Xm-bXA">
-                                <rect key="frame" x="127" y="177" width="161" height="275"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0XB-mS-0a7">
+                                <rect key="frame" x="20" y="181" width="362" height="351"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVa-b9-n8Z">
-                                <rect key="frame" x="200" y="44" width="80" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAx-go-CHS">
+                                <rect key="frame" x="20" y="37" width="79" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="food" image="soft-drink-water-bottle-bottled-water-mineral-water-png-favpng-DwgRjGA8iB4pg1bEnLF2xjD79_t"/>
+                                <state key="normal" title="Food" image="meet.png"/>
                                 <connections>
-                                    <action selector="drinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCC-9r-r47"/>
+                                    <action selector="clickOnFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pcY-cc-4Uu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-kV-FMe">
-                                <rect key="frame" x="108" y="44" width="80" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3w-z7-y2d">
+                                <rect key="frame" x="225" y="62" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="drink" image="Download"/>
+                                <state key="normal" title="Health"/>
                                 <connections>
-                                    <action selector="foodButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHq-fy-fZm"/>
+                                    <action selector="clickOnHealth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o22-Rm-9Ty"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWb-wk-dSE">
-                                <rect key="frame" x="20" y="44" width="80" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0s-UN-Nbc">
+                                <rect key="frame" x="331" y="62" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="care" image="42466"/>
+                                <state key="normal" title="Care"/>
                                 <connections>
-                                    <action selector="healthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfp-tM-wgx"/>
+                                    <action selector="clickOnCare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsc-la-BY9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un0-b9-wvo">
-                                <rect key="frame" x="288" y="44" width="80" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXo-1G-hSe">
+                                <rect key="frame" x="107" y="36" width="81" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="health" image="cd3f7477f512bd05b745fa654237f627"/>
+                                <state key="normal" title="Drink" image="drink"/>
                                 <connections>
-                                    <action selector="careButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQP-RC-YlP"/>
+                                    <action selector="clickOnDrink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pL-nw-OdN"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="birdImage" destination="HRK-Xm-bXA" id="iWe-1i-tBx"/>
                         <outlet property="careBar" destination="V7Y-SZ-2ck" id="1Zh-z8-FOp"/>
-                        <outlet property="careButton" destination="Un0-b9-wvo" id="nSv-AA-Qb5"/>
+                        <outlet property="charkterImage" destination="0XB-mS-0a7" id="N9b-BV-gQP"/>
                         <outlet property="drinkBar" destination="zVe-n5-QoP" id="b4Q-L1-WTv"/>
-                        <outlet property="drinkButton" destination="LVa-b9-n8Z" id="2q7-Pm-b5A"/>
                         <outlet property="foodBar" destination="Pdp-JM-dsX" id="Gd9-CI-Ye1"/>
-                        <outlet property="foodButton" destination="tsa-kV-FMe" id="HkE-dS-Phb"/>
                         <outlet property="gameBackGround" destination="4id-j2-g7U" id="Ndh-km-yh6"/>
                         <outlet property="healthBar" destination="DUv-2d-gkv" id="GjI-dd-eyW"/>
-                        <outlet property="healthButton" destination="lWb-wk-dSE" id="HSV-16-9zs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -164,11 +159,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="42466" width="256" height="256"/>
-        <image name="Download" width="225" height="225"/>
-        <image name="cd3f7477f512bd05b745fa654237f627" width="360" height="360"/>
+        <image name="drink" width="119" height="119"/>
         <image name="file2" width="1800" height="1013"/>
-        <image name="kisspng-angry-birds-northern-cardinal-clip-art-angry-birds-5ab7fb36b6c1c0-removebg-preview" width="500" height="500"/>
+        <image name="meet.png" width="375" height="375"/>
         <image name="soft-drink-water-bottle-bottled-water-mineral-water-png-favpng-DwgRjGA8iB4pg1bEnLF2xjD79_t" width="290" height="596"/>
         <image name="white-meat-raw-meat-beef-meat-png-clip-art" width="910" height="681"/>
     </resources>

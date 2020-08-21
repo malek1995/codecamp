@@ -15,31 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hungry Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-8D-vJu">
-                                <rect key="frame" x="106.5" y="760" width="201" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="XOw-ye-zVG"/>
-                                    <constraint firstAttribute="width" constant="201" id="pm5-2W-4Qn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Hungry_Bird-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="9TY-Rv-XNU">
-                                <rect key="frame" x="69" y="223" width="276" height="264"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="264" id="VU2-K1-OU0"/>
-                                    <constraint firstAttribute="width" constant="276" id="WA4-zr-4PO"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="firstBackground" translatesAutoresizingMaskIntoConstraints="NO" id="bUS-gH-mbh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="9TY-Rv-XNU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="3yd-QC-ooU"/>
-                            <constraint firstItem="aDZ-8D-vJu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Em1-hy-Cj1"/>
-                            <constraint firstItem="9TY-Rv-XNU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WtS-DB-y3v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aDZ-8D-vJu" secondAttribute="bottom" constant="51" id="koa-Cr-r7U"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -49,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Hungry_Bird-removebg-preview" width="500" height="500"/>
+        <image name="firstBackground" width="529" height="748"/>
     </resources>
 </document>
